@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Veg-Head || Recipe Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3a5c5d0024.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar justify-content-center navbar-light bg-light">
+        <h1>Recipe Search</h1>
+    </nav>
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group form-inline">
+                            <label for="formGroupExampleInput"><h4>Search for a Recipe:</h4></label>
+                            <input type="text" class="form-control form-inline" id="ingredientInput" placeholder="Recipe">
+                            <button type="button" class="btn btn-primary" id="searchButton"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-group" id="ingredientList">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="row">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <div class="listgroup" id="recipeList">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
