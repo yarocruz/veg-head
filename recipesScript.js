@@ -9,8 +9,8 @@ function getRecipe(){
         method: "GET"
       }).then(function(res){
         console.log(res);
-        for (i=0;i < 10;i++){
-            var newRecipeItem = $("<div class='wrapper col s4 card small'><div class='card-image waves-effect waves-block waves-light'><img class='activator' src='" + res.hits[i].recipe.image + "'></div><div class='card-content'><span class='card-title activator grey-text text-darken-4'>" + res.hits[i].recipe.label + "<i class='material-icons right'>more_vert</i></span><p><a href='" + res.hits[i].recipe.url + "'>Click here for Recipe</a></p></div><div class='card-reveal'><span class='card-title grey-text text-darken-4'>" + res.hits[i].recipe.label + "<i class='material-icons right'>close</i></span><h6>What you will need:</h6><p>" +  + "</div></div>");
+        for (i=0;i < 18;i++){
+            var newRecipeItem = $("<div class='wrapper col s4 card small'><div class='card-image waves-effect waves-block waves-light'><img class='activator' src='" + res.hits[i].recipe.image + "'></div><div class='card-content'><span class='card-title activator grey-text text-darken-4'>" + res.hits[i].recipe.label + "<i class='material-icons right'>more_vert</i></span><p><a href='" + res.hits[i].recipe.url + "'>Click here for Recipe</a></p></div><div class='card-reveal'><span class='card-title grey-text text-darken-4'>" + res.hits[i].recipe.label + "<i class='material-icons right'>close</i></span><h6>What you will need:</h6><p>" + "</div></div>");
             $("#recipeList").append(newRecipeItem);
         }
 })};
@@ -33,5 +33,5 @@ $("#searchButton").on("click", function(e){
     ingredient = $("#ingredientInput").val();
     getRecipe();
     addIngredient();
-  });
+});
   
