@@ -29,6 +29,8 @@ function zCall(){
 
     let zomatoAPIKey = '4668fbe6f51718b42874da8ae396ea5c';
 
+    $("#restaurants").empty();
+
     $.ajax({
         type: "GET",
         contentType: "application/json",
