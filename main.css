@@ -1,0 +1,11 @@
+.main-wrap {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.card-container {
+}
+
+.card {
+	height: 500px;
+}
