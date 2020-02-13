@@ -5,34 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Veg-Head || Recipe Search</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    <header class="navbar justify-content-center navbar-light bg-light">
+    <header class="nav-wrapper">
         <h1>Recipe Search</h1>
     </header>
     <div class="row">
-        <div class="col-3">
+        <div class="col s12 m3">
             <div class="card">
-                <div class="card-body">
-                    <form>
-                        <div class="form-group form-inline">
-                            <label><h4>Search for an Ingredient:</h4></label>
-                            <label><h6>(Separate by commas for multiple ingredients)</h6></label>
-                            <input type="text" class="form-control form-inline" id="ingredientInput" placeholder="Ingredient">
-                            <button type="button" class="btn btn-primary" id="searchButton"><i class="fas fa-search"></i></button>
-                        </div>
-                    </form>
-                </div>
-                <div class="list-group" id="ingredientList"> 
+                <div class="card-content">
+                    <div class="input-field">
+                        <h4>Search for an Ingredient:</h4>
+                        <h6>(Separate by commas for multiple ingredients)</h6>
+                        <input type="text" class="validate" id="ingredientInput" placeholder="Ingredient">
+                        <button type="button" class="btn waves-effect waves-light" id="searchButton">
+                        <i class="fas fa-search"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-9">
+        <div class="col s12 m9">
             <div class="row">
-                <div class="card-body">
+                <div class="card-content">
                     <div id="recipeList"> 
                     </div>
                 </div>
