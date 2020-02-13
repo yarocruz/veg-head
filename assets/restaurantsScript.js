@@ -20,9 +20,9 @@ function search(){
             localStorage.setItem('lon', lon);
             zCall();
         });
-        history();
     };
 };
+
 
 function zCall(){
     let zQueryUrl = 'https://developers.zomato.com/api/v2.1/search?lat=' + localStorage.getItem('lat') + '&lon=' + localStorage.getItem('lon') + '&q=vegetarian';
@@ -37,8 +37,6 @@ function zCall(){
         url: zQueryUrl,
         headers : { "user-key" : zomatoAPIKey }
     }).then(function(result) {
-        console.log(result)
-
         for (i = 0; i < 18; i++) {
             var srch = result.restaurants[i].restaurant;
 
