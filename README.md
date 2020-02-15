@@ -23,6 +23,8 @@ and finally the native geolocation api to return the users location.
 The restaraunt search initially asks the user if they would like to share their location. If the user says yes, their current
 latitude and longitude will be used to generate the search results. 
 
+![1](https://user-images.githubusercontent.com/58165715/74590647-38a6a200-4fde-11ea-8723-7beccc3e44f2.PNG)
+
 If a user says no, they then can enter a location in to the search bar. If a location is entered in to the search box the script then
 calls the open weather map api to return the latitude and longitude of the entered city. Those coordinates are then used in the search
 function to return the results. 
