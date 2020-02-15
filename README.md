@@ -13,3 +13,10 @@ current location, or a user entered location. The search results are returned in
 function, however, they contain an image, the address, phone number, customer rating, operating hours, and a link to the menu. 
 
 The restaraunt search function also returns a map of the area and populates said map with markers respective to the results.
+
+## Structure
+
+The web application is built using a total of 5 apis. Edamam; for returning recipe data, Zomato; for returning restaraunt data,
+open weather map; for returning the coordinates of a user inputed location, google map api; to create a map for restaraunt search,
+and finally the native geolocation api to return the users location.
+
