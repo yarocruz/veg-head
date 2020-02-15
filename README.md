@@ -20,3 +20,13 @@ The web application is built using a total of 5 apis. Edamam; for returning reci
 open weather map; for returning the coordinates of a user inputed location, google map api; to create a map for restaraunt search,
 and finally the native geolocation api to return the users location.
 
+The restaraunt search initially asks the user if they would like to share their location. If the user says yes, their current
+latitude and longitude will be used to generate the search results. 
+
+If a user says no, they then can enter a location in to the search bar. If a location is entered in to the search box the script then
+calls the open weather map api to return the latitude and longitude of the entered city. Those coordinates are then used in the search
+function to return the results. 
+
+When any search is made the google maps api is used to create and populate a map based on the results from the zomato api.
+
+The recipe search works similarly returning recipes using the edamam api and populating the results in cards.
