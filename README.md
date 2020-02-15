@@ -26,10 +26,12 @@ latitude and longitude will be used to generate the search results.
 ![1](https://user-images.githubusercontent.com/58165715/74590647-38a6a200-4fde-11ea-8723-7beccc3e44f2.PNG)
 
 If a user says no, they then can enter a location in to the search bar. If a location is entered in to the search box the script then
-calls the open weather map api to return the latitude and longitude of the entered city. Those coordinates are then used in the search
-function to return the results.
+calls the open weather map api to return the latitude and longitude of the entered city.
 
 ![2](https://user-images.githubusercontent.com/58165715/74590688-6855aa00-4fde-11ea-9ff8-3108952f315c.PNG)
+
+Those coordinates are then used in the search function to return the results.
+
 ![3](https://user-images.githubusercontent.com/58165715/74590732-00ec2a00-4fdf-11ea-841a-e758dbf95840.PNG)
 
 When any search is made the google maps api is used to create and populate a map based on the results from the zomato api.
