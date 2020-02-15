@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.min.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="assets/style.css">
 
 </head>
-<body class="recipePage">
+<body>
+    <div class="recipePage">
     
-    <div class="row">
+    <div class="row" id="recipeRow">
         <div class="col-3">
-            <div class="card">
+            <div class="card vov zoom-in fast t-1" id='recipeSearchCard'>
                 <div class="card-body">
                     <form>
                         <div class="form-group form-inline">
@@ -43,24 +46,23 @@
 <!-- button bottom left -->
 
     <div id="navbtn" class="fixed-action-btn vov zoom-in" style="bottom: 45px; right: 24px ">
-        <a class="btn-floating btn-large red" >
+        <a class="btn-floating btn-large green darken-2" >
           <i class="large material-icons">subject</i>
         </a>
         <ul>
           <li><a id="alex" target="blank_" href="https://alexjoeldelgado.github.io/ResponsivePortfolio/" class="btn-floating red"><img src="images/alex.jpg" alt="pic" class="circle responsive-img"></a></li>
-          <li><a id="mike" target="blank" href="https://github.com/Michael-Mend" class="btn-floating yellow darken-1"><img src="images/mikem.jpg" alt="pic" class="circle responsive-img"></a></li>
+          <li><a id="mike" target="blank" href="https://michael-mend.github.io/index.html" class="btn-floating yellow darken-1"><img src="images/mikem.jpg" alt="pic" class="circle responsive-img"></a></li>
           <li><a id="ant" target="blank_" href="https://hotwasubi.github.io/portfolio-" class="btn-floating green"><img src="images/me.jpg" alt="pic" class="circle responsive-img" url="hotwasubi.github.io/portfolio-"></a></li>
           <li><a id="yarocruz" target="blank" href="https://yarocruz.github.io/" class="btn-floating blue"><img src="images/yarocruz.jpg" alt="pic" class="circle responsive-img"></a></li>
-          <li><a class="btn-floating orange" href="index.html"><i class="material-icons" >home</i></a></li> 
+          <li><a class="btn-floating red" href="index.html"><i class="material-icons" >home</i></a></li> 
         </ul>
   </div>
-</body> 
+</div>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://kit.fontawesome.com/3a5c5d0024.js" crossorigin="anonymous"></script>
 <script src="assets/aScript.js"></script>
-</html>
-<script>
- 
-</script>
+</body>
 </html>

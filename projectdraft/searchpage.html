@@ -10,23 +10,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="assets/style.css">
   
    
 </head>
-<body class="resPage">
+<body>
     <!-- <header class="navbar justify-content-center navbar-light bg-light">
         <h1>Restaurant Search</h1>
     </header> -->
     
     <!-- <div class=" vov zoom-in fast t-1 resSearch">Restaurant Search</div> -->
-    <div class="row">
+ <div class="restPage">   
+    <div class="row" id="restRow">
         <div class="col-3">
-            <div class=" vov zoom-in fast t-1 card">
+            <div class=" vov zoom-in fast t-1 card" id="searchCard">
                 <div class="card-body">
                 
-                        <div class="form-group form-inline">
+                        <div class="form-group form-inline" id="srchInput">
                             <label><h4>Search for a Location:</h4></label>
                             <label><h6>(enter a city)</h6></label>
                             <input type="text" class="form-control form-inline" id="rstInput" placeholder="Location">
@@ -49,20 +52,20 @@
     </div>
     <!-- button bottom left -->
     <div class="fixed-action-btn vov zoom-in" style="bottom: 45px; right: 24px ">
-        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">subject</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">subject</i></a>
         </a>
         <ul>
           <li><a id="alex" target="blank_" href="https://alexjoeldelgado.github.io/ResponsivePortfolio/" class="btn-floating red"><img src="images/alex.jpg" alt="pic" class="circle responsive-img"></a></li>
-          <li><a id="mike" target="blank" href="https://github.com/Michael-Mend" class="btn-floating yellow darken-1"><img src="images/mikem.jpg" alt="pic" class="circle responsive-img"></a></li>
+          <li><a id="mike" target="blank" href="https://michael-mend.github.io/index.html" class="btn-floating yellow darken-1"><img src="images/mikem.jpg" alt="pic" class="circle responsive-img"></a></li>
           <li><a id="ant" target="blank_" href="https://hotwasubi.github.io/portfolio-" class="btn-floating green"><img src="images/me.jpg" alt="pic" class="circle responsive-img" url="hotwasubi.github.io/portfolio-"></a></li>
           <li><a id="yarocruz" target="blank" href="https://yarocruz.github.io/" class="btn-floating blue"><img src="images/yarocruz.jpg" alt="pic" class="circle responsive-img"></a></li>
           <li><a class="btn-floating orange" href="index.html"><i class="material-icons" >home</i></a></li> 
         </ul>
   </div>
-  
-</body> 
+ </div>  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://kit.fontawesome.com/3a5c5d0024.js" crossorigin="anonymous"></script>
 <script src="assets/script.js"></script>
+</body>
 </html>
