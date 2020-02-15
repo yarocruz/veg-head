@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'top',
+      hoverEnabled: false
+    });
+  });
+  
 function search() {
     if (rstInput.value === "") {
         navigator.geolocation.getCurrentPosition(function (pos) {
@@ -27,9 +35,10 @@ function search() {
 
 };
 
-
+var place_markers = [];
+var infoWindow = [];
 function zCall() {
-    let zQueryUrl = 'https://developers.zomato.com/api/v2.1/search?lat=' + localStorage.getItem('lat') + '&lon=' + localStorage.getItem('lon') + '&q=vegetarian';
+    let zQueryUrl = 'https://developers.zomato.com/api/v2.1/search?lat=' + localStorage.getItem('lat') + '&lon=' + localStorage.getItem('lon') + '&q=vegetarian&sort=real_distance';
 
     let zomatoAPIKey = '4668fbe6f51718b42874da8ae396ea5c';
 
@@ -41,15 +50,21 @@ function zCall() {
         url: zQueryUrl,
         headers: { "user-key": zomatoAPIKey }
     }).then(function (result) {
-        //console.log(result)
-
-
-
+        console.log(result)
+        var searchMap = $("<iframewidth='600'height='450'frameborder='0' style='border:0'src='https://www.google.com/maps/embed/v1/search?key=AIzaSyChMTq7zveGs-pvx0wWFqj9wKGhNcih6_c&q=vegetarian+restaurants+in+" + $(".rstInput").val() + "' allowfullscreen></iframe>")
+        $("#map").append(searchMap);
+        
         for (i = 0; i < 18; i++) {
             var srch = result.restaurants[i].restaurant;
+            var myLatLng = new google.maps.LatLng(srch.location.latitude, srch.location.longitude);
+                    var marker = new google.maps.Marker({
+                            position: myLatLng,
+                            map: map,
+                            title: srch.name,
+        });
 
-
-
+        place_markers.push(marker);
+       
             if (srch.featured_image) {
                 var pic = srch.featured_image;
             } else {
@@ -62,10 +77,10 @@ function zCall() {
     });
 };
 
-function initMap(lat, lon) {
+function initMap(lat,lon) {
     map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: lat, lng: lon },
-        zoom: 8
+        zoom: 11
     });
 }
 
@@ -76,6 +91,7 @@ $("button").click(function () {
 $('body').keypress(function (e) {
     var keycode = (e.keyCode);
     if (keycode == '13') {
+        event.preventDefault()
         search();
     }
 });

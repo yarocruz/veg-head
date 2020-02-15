@@ -2,116 +2,116 @@
 
 
 .homePage {
-  background-image: url(../images/homePage.jpg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-#vegHead{
- color:white ;
- font-size: 80px;
- text-align: center;
- margin-top: 21%;
- font-family: 'Rubik Mono One', sans-serif;
- } 
-#logo{
-  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
- }
-#recipes{
-  border-radius: 25px;
- }
- #rest{
-  border-radius: 25px;
- }
-
- /* restuarant page */
- body{
+	background-image: url(../images/homePage.jpg);
+	background-size: auto;
+	background-repeat: no-repeat;
+	height: 100%;
+  }
+  #vegHead{
+   color:white ;
+   font-size: 80px;
+   text-align: center;
+   margin-top: 21%;
+   font-family: 'Rubik Mono One', sans-serif;
+   } 
+  #logo{
+	text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+   }
+  #recipes{
+	border-radius: 25px;
+   }
+   #rest{
+	border-radius: 25px;
+   }
+  
+   /* restuarant page */
+   body{
+	 padding: 0;
+	 margin: 0;
+   }
+   #restRow{
+	 margin-bottom: 0;
+   }
+  .restPage{
+	background-image: linear-gradient(to bottom left,#ffb74d,#ffee58,#81c784);
+	background-size: 100%;
+	min-height: 100vh;
+	font-family: 'Yeseva One',cursive;
+  }
+  #searchCard{
+	border-radius: 5%;
+	background-color:white;
+	opacity: .5;
+  }
+  #searchCard:hover{
+	opacity: 1;
+  }
+  h4{
+	color: #66bb6a;
+  }
+  h6{
+	color: #66bb6a;
+  }
+  input{
+	color: #66bb6a;
+  }
+  #restCard{ 
+   border: none;
+   margin-right: 10px;
+   background-color: white;
+   position: relative;
    padding: 0;
-   margin: 0;
- }
- #restRow{
-   margin-bottom: 0;
- }
-.restPage{
-  background-image: linear-gradient(to bottom left,#ffb74d,#ffee58,#81c784);
-  background-size: 100%;
-  min-height: 100vh;
-  font-family: 'Yeseva One',cursive;
-}
-#searchCard{
-  border-radius: 5%;
-  background-color:white;
-  opacity: .5;
-}
-#searchCard:hover{
-  opacity: 1;
-}
-h4{
-  color: #66bb6a;
-}
-h6{
-  color: #66bb6a;
-}
-input{
-  color: #66bb6a;
-}
-#restCard{ 
- border: none;
- margin-right: 10px;
- background-color: white;
- position: relative;
- padding: 0;
- border-radius: 5%;
- opacity: .8;
-}
- #restCard:hover{
-   background-color: skyblue;
-   border-color: skyblue;
-   opacity: 1;
-}
-#resPic{
-  border-radius: 4%;
-}
-#picEdge{
-  border-radius: 4%;
-}
- 
-  /* recipe page */
-body{
-  margin: 0;
-  padding: 0;
-}
-#recipeRow{
-  margin-bottom: 0;
-}
-#recipeSearchCard{
-  border-radius: 5%;
-  opacity: .5;
-}
-#recipeSearchCard:hover{
-  opacity: 1;
-}
-.recipePage{
-  background-image: linear-gradient(to bottom right, green,orange, yellow);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  min-height: 100vh; 
-  font-family: 'Yeseva One',cursive;
- }
-#recipeCard{
-  padding:2px;
-  border: 2px;
-  margin-right: 10px;
-  border-radius: 5%;
-  opacity: .8;
-}
-#recipeCard:hover{
-  opacity: 1.2;
-  background-color: white;
-}
-#recipePicEdge{
-  border-radius: 4%;
-}
-#recipePic{
-  border-radius: 4%;
-}
+   border-radius: 5%;
+   opacity: .8;
+  }
+   #restCard:hover{
+	 background-color: skyblue;
+	 border-color: skyblue;
+	 opacity: 1;
+  }
+  #resPic{
+	border-radius: 4%;
+  }
+  #picEdge{
+	border-radius: 4%;
+  }
+   
+	/* recipe page */
+  body{
+	margin: 0;
+	padding: 0;
+  }
+  #recipeRow{
+	margin-bottom: 0;
+  }
+  #recipeSearchCard{
+	border-radius: 5%;
+	opacity: .5;
+  }
+  #recipeSearchCard:hover{
+	opacity: 1;
+  }
+  .recipePage{
+	background-image: linear-gradient(to bottom right, green,orange, yellow);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 100vh; 
+	font-family: 'Yeseva One',cursive;
+   }
+  #recipeCard{
+	padding:2px;
+	border: 2px;
+	margin-right: 10px;
+	border-radius: 5%;
+	opacity: .8;
+  }
+  #recipeCard:hover{
+	opacity: 1.2;
+	background-color: white;
+  }
+  #recipePicEdge{
+	border-radius: 4%;
+  }
+  #recipePic{
+	border-radius: 4%;
+  }

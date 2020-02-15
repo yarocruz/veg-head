@@ -1,54 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Veg-Head || Recipe Search</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/main.css">
-
-    </script>
 </head>
-
 <body>
-    <header class="navbar justify-content-center navbar-light bg-light">
-        <h1>Restaurant Search</h1>
+    <header class="nav-wrapper">
+        <h1>Recipe Search</h1>
     </header>
     <div class="row">
-        <div class="col-3">
+        <div class="col s12 m3">
             <div class="card">
-                <div class="card-body">
-                    <form>
-                        <div class="form-group form-inline">
-                            <label>
-                                <h4>Search for a Location:</h4>
-                            </label>
-                            <label>
-                                <h6>(enter a city or press enter)</h6>
-                            </label>
-                            <input type="text" class="form-control form-inline" id="rstInput" placeholder="Location"
-                                value="">
-                            <button type="button" class="btn btn-primary" id="searchButton"><i
-                                    class="fas fa-search"></i></button>
-                        </div>
-                    </form>
-
-                    <div id="map" style="height: 300px;"></div>
-                </div>
-
-                <div class="list-group" id="ingredientList">
+                <div class="card-content">
+                    <div class="input-field">
+                        <h4>Search for an Ingredient:</h4>
+                        <h6>(Separate by commas for multiple ingredients)</h6>
+                        <input type="text" class="validate" id="ingredientInput" placeholder="Ingredient">
+                        <button type="button" class="btn waves-effect waves-light" id="searchButton">
+                        <i class="fas fa-search"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-9">
+        <div class="col s12 m9">
             <div class="row">
-                <div class="card-body">
-                    <div id="restaurants">
+                <div class="card-content">
+                    <div id="recipeList"> 
                     </div>
                 </div>
             </div>
@@ -66,13 +48,9 @@
           
         </ul>
   </div>
-</body>
+</body> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://kit.fontawesome.com/3a5c5d0024.js" crossorigin="anonymous"></script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChMTq7zveGs-pvx0wWFqj9wKGhNcih6_c&callback=initMap"></script>
-<script src="assets/restaurantsScript.js"></script>
-
-
+<script src="assets/recipesScript.js"></script>
 </html>
