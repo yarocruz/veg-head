@@ -50,7 +50,7 @@ $("#searchButton").on("click", function(e){
     clearList();
     ingredient = $("#ingredientInput").val();
     getRecipe();
-    getRecipeIngredients()
+    getRecipeIngredients();
 });
   
 document.addEventListener('DOMContentLoaded', function() {
@@ -59,4 +59,15 @@ document.addEventListener('DOMContentLoaded', function() {
       direction: 'top',
       hoverEnabled: false
     });
+});
+
+$('body').keypress(function (e) {
+    var keycode = (e.keyCode);
+    if (keycode == '13') {
+        event.preventDefault();
+        clearList();
+        ingredient = $("#ingredientInput").val();
+        getRecipe();
+        getRecipeIngredients();
+    }
 });
