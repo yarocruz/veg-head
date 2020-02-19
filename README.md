@@ -52,6 +52,9 @@ https://yarocruz.github.io/veg-head/
 
 #### Authors
 Yarosky Cruz
+<br>
 Alexander Delgado
+<br>
 Michael Mendoza
+<br>
 Anthony Colindres
