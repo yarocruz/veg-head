@@ -14,50 +14,60 @@ function getRecipe(){
             
             $("#recipeList").append(newRecipeItem);
         }
-})};
+    })
+};
+
 function getRecipeIngredients(){
-  queryURL = "https://api.edamam.com/search?q=" + ingredient + "&app_id=4774b501&app_key=e1a8ea5f7cdb69019154dae735be3a85&health=vegetarian&to=18";
+    queryURL = "https://api.edamam.com/search?q=" + ingredient + "&app_id=4774b501&app_key=e1a8ea5f7cdb69019154dae735be3a85&health=vegetarian&to=18";
     $.ajax({
         url: queryURL,
         method: "GET"
-      }).then(function(res){
+    }).then(function(res){
         var recipes = res.hits;
-  for (i=0;i<recipes.length;i++){
-    for (j=0;j<recipes[i].recipe.ingredientLines.length;j++){
-      var ingredientList = recipes[i].recipe.ingredientLines[j];
-      var recipeIngredientItem = $("<li>");
-      recipeIngredientItem.append(ingredientList);
-      $("#recipeIngredients"+i).append(recipeIngredientItem);
-    };
-  }});
-}
-// function addIngredient(){
-//     var newIngredient = $("<button type='button' id='" + ingredient + "' class='citybutton collection-item active'>" + ingredient + "</button>");
-//     $("#ingredientList").prepend(newIngredient);
-//   };
+        for (i=0;i<recipes.length;i++){
+            for (j=0;j<recipes[i].recipe.ingredientLines.length;j++){
+                var ingredientList = recipes[i].recipe.ingredientLines[j];
+                var recipeIngredientItem = $("<li>");
+                recipeIngredientItem.append(ingredientList);
+                $("#recipeIngredients"+i).append(recipeIngredientItem);
+            };
+        };   
+    });
+};
+
 function clearList(){
     $("#recipeList").empty();
-}
+};
+
 $(document).on("click", ".citybutton", function() {
     clearList();
     ingredient = $(this).text();
     getRecipe();
-  });
+});
 
 $("#searchButton").on("click", function(e){
     event.preventDefault();
     clearList();
     ingredient = $("#ingredientInput").val();
     getRecipe();
-    getRecipeIngredients()
-    // addIngredient();
-  });
+    getRecipeIngredients();
+});
   
-  // floating action button/bottom left corner
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, {
       direction: 'top',
       hoverEnabled: false
     });
-  });
+});
+
+$('body').keypress(function (e) {
+    var keycode = (e.keyCode);
+    if (keycode == '13') {
+        event.preventDefault();
+        clearList();
+        ingredient = $("#ingredientInput").val();
+        getRecipe();
+        getRecipeIngredients();
+    }
+});
