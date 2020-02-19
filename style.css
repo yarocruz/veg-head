@@ -115,3 +115,56 @@ body{
 #recipePic{
   border-radius: 4%;
 }
+@media (max-width: 786px){
+  /* recipe page */
+h4{
+    color:white;
+}
+h4{
+    color:white;
+}
+input{
+    color:white;
+}
+.recipePage{
+    background-image:none;
+}
+#recipeSearchCard{
+    width:225px;
+    opacity:1;
+
+}
+#recipeCard{
+    right:50px;
+    top:355px;
+    width:225px;
+    background-color:#c8e6c9;
+}
+/*   rest page */
+
+.restPage{
+background-image: none;
+background-color:white;
+}
+#searchCard{
+width:225px;
+opacity:1;
+background-color:#fff9c4 
+}
+h4{color:white;}
+h6{color:white;}
+#map{
+display:none;
+}
+#restCard{
+right:50px;
+top:355px;
+width:225px;
+background-color:#fff9c4 ;
+opacity:1;
+}
+#restCard:hover{
+background-color:#fff9c4 ;
+}
+
+}
