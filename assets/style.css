@@ -37,7 +37,8 @@
 	font-family: 'Yeseva One',cursive;
   }
   #searchCard{
-	border-radius: 5%;
+  border-radius: 5%;
+  padding: 5%;
 	background-color:white;
 	opacity: .5;
   }
@@ -84,7 +85,8 @@
   }
   #recipeSearchCard{
 	border-radius: 5%;
-	opacity: .5;
+  opacity: .5;
+  padding: 5%;
   }
   #recipeSearchCard:hover{
 	opacity: 1;
@@ -97,7 +99,7 @@
 	font-family: 'Yeseva One',cursive;
    }
   #recipeCard{
-	padding:2px;
+	padding: 1px;
 	border: 2px;
 	margin-right: 10px;
 	border-radius: 5%;
